@@ -13,3 +13,6 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 ## Todos
     - [ php artisan make:model Todo -m](Membuat model beserta miggrationnnya).
+    - [ php artisan make:controller TodosController](Membuat Controller Todo).
+    - [ php artisan make:seeder TodosTableSeeder](Membuat Seeder Todo).
+        -php artisan db:seed
