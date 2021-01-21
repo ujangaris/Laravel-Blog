@@ -9,3 +9,8 @@ Route::get('/new',[
      
     'uses' => 'PagesController@new'
 ]);
+
+Route::get('/todos',[
+     
+    'uses' => 'TodosController@index'
+]);
