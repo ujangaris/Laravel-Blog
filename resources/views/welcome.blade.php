@@ -1,5 +1,5 @@
 @extends('layout')
 
 @section('content')
-    <h1>Welcome Laravel</h1>
+    <h1><a href="/todos">Visit my todos</a></h1>
 @stop
