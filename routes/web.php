@@ -45,3 +45,7 @@ Route::get('/todos/completed/{id}',[
     'uses' => 'TodosController@completed',
     'as'   => 'todos.completed'
 ]);
+// Authentication
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
