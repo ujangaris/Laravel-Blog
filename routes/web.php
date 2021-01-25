@@ -51,7 +51,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 // Post
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin', 'middleware' =>'auth'], function () {
     
     Route::get('/post/create', [
         'uses'   => 'PostsController@create',
@@ -61,4 +61,5 @@ Route::group(['prefix' => 'admin'], function () {
         'uses'   => 'PostsController@store',
         'as'    => 'post.store'
     ]);
+    
 });
