@@ -49,3 +49,10 @@ Route::get('/todos/completed/{id}',[
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Post
+
+Route::get('/post/create', [
+    'uses'   => 'PostsController@create',
+    'as'    => 'post.create'
+]);

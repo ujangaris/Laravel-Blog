@@ -20,3 +20,4 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 ## Blog - Post
     - [ php artisan make:model Post -m](Membuat model Post beserta miggrationnnya).
     - [ php artisan make:model Category -m](Membuat model Category beserta miggrationnnya).
+    - [php artisan make:controller PostsController -r](Membuat controller Post beserta resourcenya).
