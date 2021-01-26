@@ -48,11 +48,14 @@ Route::get('/todos/completed/{id}',[
 // Authentication
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
 // Post
 Route::group(['prefix' => 'admin', 'middleware' =>'auth'], function () {
     
+    Route::get('/home', [
+        'uses'  => 'HomeController@index',
+        'as'    => 'home'
+    ]);
     Route::get('/post/create', [
         'uses'   => 'PostsController@create',
         'as'    => 'post.create'
