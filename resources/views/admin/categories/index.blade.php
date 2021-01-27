@@ -17,7 +17,9 @@
                         <td>
                             <a href="{{ route('category.edit', ['id' => $category->id]) }}" class="btn btn-xs btn-warning">edit</a>
                         </td>
-                        
+                        <td>
+                            <a href="{{ route('category.delete', ['id' => $category->id]) }}" class="btn btn-xs btn-danger">delete</a>
+                        </td>
                     </tr>
                 </tbody>
                 @endforeach
