@@ -14,6 +14,10 @@
                         
                     <tr>
                         <td>{{ $category->name }}</td>
+                        <td>
+                            <a href="{{ route('category.edit', ['id' => $category->id]) }}" class="btn btn-xs btn-warning">edit</a>
+                        </td>
+                        
                     </tr>
                 </tbody>
                 @endforeach
