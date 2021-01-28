@@ -27,3 +27,4 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Menambah notifikasi](https://github.com/CodeSeven/toastr).
 ## Pindah semua data ke branch blog
 - [mulai dari  031 Displaying Categories in form]
+-[php artisan migrate:refresh](merollback database migration)
