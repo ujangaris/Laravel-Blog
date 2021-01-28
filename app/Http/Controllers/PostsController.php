@@ -59,7 +59,7 @@ class PostsController extends Controller
             $post = Post::create([
                 'title' => $request->title,
                 'content' => $request->content,
-                'featured' => 'uploads/posts'. $featured_new_name, 
+                'featured' => 'uploads/posts/'. $featured_new_name, 
                 'category_id' => $request->category_id,'slug' => str_slug($request->title),
 
             ]);
