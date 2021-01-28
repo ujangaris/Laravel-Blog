@@ -28,3 +28,5 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 ## Pindah semua data ke branch blog
 - [mulai dari  031 Displaying Categories in form]
 -[php artisan migrate:refresh](merollback database migration)
+-[php artisan make:seeder UsersTableSeeder](Membuat UsersTableSeeder)
+-[php artisan migrate:refresh --seed](Merefresh sekaligus mensending data yang dibuat pada UserTableSeeder)
