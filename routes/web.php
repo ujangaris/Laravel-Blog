@@ -64,6 +64,12 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         'uses'   => 'PostsController@store',
         'as'    => 'post.store'
     ]);
+    Route::get('/posts', [
+        'uses'   => 'PostsController@index',
+        'as'    => 'posts'
+    ]);
+
+
     // category
     Route::get('/category/create', [
         'uses'   => 'CategoriesController@create',
