@@ -16,3 +16,14 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
     - [ php artisan make:controller TodosController](Membuat Controller Todo).
     - [ php artisan make:seeder TodosTableSeeder](Membuat Seeder Todo).
         -php artisan db:seed
+
+
+## Blog - Post
+- [ php artisan make:model Post -m](Membuat model Post beserta miggrationnnya).
+- [ php artisan make:model Category -m](Membuat model Category beserta miggrationnnya).
+- [php artisan make:controller PostsController -r](Membuat controller Post beserta resourcenya).
+## Blog - Categories
+- [ php artisan make:controller CategoriesController -r](Membuat Controller Categories beserta resourcenya).
+- [Menambah notifikasi](https://github.com/CodeSeven/toastr).
+## Pindah semua data ke branch blog
+- [mulai dari  031 Displaying Categories in form]
