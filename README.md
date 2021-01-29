@@ -30,3 +30,8 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 -[php artisan migrate:refresh](merollback database migration)
 -[php artisan make:seeder UsersTableSeeder](Membuat UsersTableSeeder)
 -[php artisan migrate:refresh --seed](Merefresh sekaligus mensending data yang dibuat pada UserTableSeeder)
+
+## Blog - Tags
+- [ php artisan make:model Tag -m](Membuat model Tag beserta migrationnya).
+- [ php artisan make:migration create_post_tag_table](Membuat migration vipot,  relasi antara tags dan post).
+    - php artisan migrate
