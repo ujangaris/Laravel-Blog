@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/test', function () {
-    return App\Category::find(2)->posts;
+    return App\Post::find(6)->tags;
 });
 
 Route::get('/', function () {
@@ -97,7 +97,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     ]);
 
 
-    // category
+    // Tag
     Route::get('/category/create', [
         'uses'   => 'CategoriesController@create',
         'as'    => 'category.create'
