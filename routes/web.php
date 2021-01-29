@@ -80,6 +80,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         'uses'   => 'PostsController@kill',
         'as'    => 'post.kill'
     ]);
+    Route::get('/posts/restore/{id}', [
+        'uses'   => 'PostsController@restore',
+        'as'    => 'post.restore'
+    ]);
 
 
     // category
