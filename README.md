@@ -35,3 +35,5 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [ php artisan make:model Tag -m](Membuat model Tag beserta migrationnya).
 - [ php artisan make:migration create_post_tag_table](Membuat migration vipot,  relasi antara tags dan post).
     - php artisan migrate
+
+- [ php artisan make:controller TagsController -r](Membuat Controller Tag beserta resourcenya).
