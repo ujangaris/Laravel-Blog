@@ -150,4 +150,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         'uses'   => 'TagsController@destroy',
         'as'    => 'tag.delete'
     ]);
+
+    // User
+    Route::get('/users', [
+        'uses'   => 'UsersController@index',
+        'as'    => 'users'
+    ]);
 });

@@ -41,3 +41,4 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 ## Blog - Profile
 - [ php artisan make:model Profile -m](Membuat model Profile beserta migrationnya).
 - [ php artisan migrate:refresh --seed](Merollback migration serta data seedernya).
+- [ php artisan make:controller UsersController -r](Membuat controller Users beserta resourcenya).
