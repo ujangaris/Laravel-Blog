@@ -27,7 +27,8 @@
                 @endforeach
               </select>
             </div>
-             <div class="form-group">
+            <div class="form-group">
+              <label for="category">Select tags</label>
                 @foreach ($tags as $tag)
                   <div class="checkbox">
                       <label><input type="checkbox" name="tags[]" value="{{ $tag->id }}">{{ $tag->tag }}</label>
