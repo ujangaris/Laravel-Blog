@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Session;
+use App\Profile;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -24,7 +26,7 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.users.create');
     }
 
     /**
@@ -35,7 +37,23 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'name' =>'required',
+            'email' =>'required|email',
+        ]);
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => bcrypt('admin0k8')
+        ]);
+
+        $profile = Profile::create([
+            'user_id' => $user->id,
+            'avatar'  => 'uploads/avatars/avatar1.png' 
+        ]);
+
+        Session::flash('success', 'User added successfully.');
+        return redirect()->route('users');
     }
 
     /**
