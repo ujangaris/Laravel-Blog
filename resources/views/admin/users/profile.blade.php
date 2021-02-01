@@ -9,7 +9,7 @@
           Edit your profile       
       </div>
       <div class="panel-body">
-        <form action="{{ route('user.profile.update') }}" method="post">
+        <form action="{{ route('user.profile.update') }}" method="post" enctype="multipart/form-data">
           {{ csrf_field() }}
             <div class="form-group">
               <label for="name">Username</label>
@@ -28,12 +28,12 @@
               <input type="file" name="avatar" class="form-control">
             </div>
             <div class="form-group">
-              <label for="facebook">Youtube profile</label>
-              <input type="text" name="facebook" value="{{ $user->profile->facebook }}"class="form-control">
+              <label for="facebook">Facebook profile</label>
+              <input type="url" name="facebook" value="{{ $user->profile->facebook }}"class="form-control">
             </div>
             <div class="form-group">
               <label for="youtube">Youtube profile</label>
-              <input type="text" name="youtube" value="{{ $user->profile->youtube }}"class="form-control">
+              <input type="url" name="youtube" value="{{ $user->profile->youtube }}"class="form-control">
             </div>
             <div class="form-group">
               <label for="about">About you</label>
