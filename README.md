@@ -45,3 +45,9 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [ php artisan make:controller UsersController -r](Membuat controller Users beserta resourcenya).
 - [ php artisan make:middleware Admin](Membuat middleware Admin).
 - [ php artisan make:controller ProfilesController -r](Membuat Controller Profile).
+
+## Blog - Setting
+
+- [ php artisan make:model Setting -m](Membuat model Setting beserta migrationnya).
+- [ php artisan make:seeder SettingsTableSeeder](Membuat Seeder setting).
+- [ php artisan make:controller SettingsController](Membuat Controller setting).

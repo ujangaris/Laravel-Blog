@@ -186,4 +186,13 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         'uses'   => 'UsersController@destroy',
         'as'    => 'user.delete'
     ]);
+    //Settings
+    Route::get('/settings', [
+        'uses'   => 'SettingsController@index',
+        'as'    => 'settings'
+    ]);
+    Route::post('/settings/update', [
+        'uses'   => 'SettingsController@update',
+        'as'    => 'settings.update'
+    ]);
 });
