@@ -54,3 +54,4 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 ## Blog - Frontend
 - [ php artisan make:controller FrontEndController](Membuat Controller Frontend).
+- [ Membuat tampilan comentar dengan Disqus](https://disqus.com/).
