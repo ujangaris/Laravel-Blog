@@ -1,57 +1,41 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Laravel Blog
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+![laravelBlog](https://user-images.githubusercontent.com/23657902/107719561-16d41e00-6d0b-11eb-86be-86f85a4e3a62.png)
 
-## About Laravel
+### Featur-featur yang terdapat pada aplikasi ✨:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+## Modul Tags
+- CRUD Tags
 
-## Todos
-    - [ php artisan make:model Todo -m](Membuat model beserta miggrationnnya).
-    - [ php artisan make:controller TodosController](Membuat Controller Todo).
-    - [ php artisan make:seeder TodosTableSeeder](Membuat Seeder Todo).
-        -php artisan db:seed
+![tags](https://user-images.githubusercontent.com/23657902/107720410-e1303480-6d0c-11eb-8824-f0b56b1ae782.png)
+
+![addTag](https://user-images.githubusercontent.com/23657902/107720493-03c24d80-6d0d-11eb-878c-1dc8d194daef.png)
 
 
-## Blog - Post
-- [ php artisan make:model Post -m](Membuat model Post beserta miggrationnnya).
-- [ php artisan make:model Category -m](Membuat model Category beserta miggrationnnya).
-- [php artisan make:controller PostsController -r](Membuat controller Post beserta resourcenya).
-- [membuat text area jadi menarik](https://summernote.org/getting-started/).
-## Blog - Categories
-- [ php artisan make:controller CategoriesController -r](Membuat Controller Categories beserta resourcenya).
-- [Menambah notifikasi](https://github.com/CodeSeven/toastr).
-## Pindah semua data ke branch blog
-- [mulai dari  031 Displaying Categories in form]
--[php artisan migrate:refresh](merollback database migration)
--[php artisan make:seeder UsersTableSeeder](Membuat UsersTableSeeder)
--[php artisan migrate:refresh --seed](Merefresh sekaligus mensending data yang dibuat pada UserTableSeeder)
 
-## Blog - Tags
-- [ php artisan make:model Tag -m](Membuat model Tag beserta migrationnya).
-- [ php artisan make:migration create_post_tag_table](Membuat migration vipot,  relasi antara tags dan post).
-    - php artisan migrate
+## Modul Category
+- CRUD Category
 
-- [ php artisan make:controller TagsController -r](Membuat Controller Tag beserta resourcenya).
+![category](https://user-images.githubusercontent.com/23657902/107720510-0fae0f80-6d0d-11eb-9586-62141bd3d386.png)
 
-## Blog - Profile
-- [ php artisan make:model Profile -m](Membuat model Profile beserta migrationnya).
-- [ php artisan migrate:refresh --seed](Merollback migration serta data seedernya).
-- [ php artisan make:controller UsersController -r](Membuat controller Users beserta resourcenya).
-- [ php artisan make:middleware Admin](Membuat middleware Admin).
-- [ php artisan make:controller ProfilesController -r](Membuat Controller Profile).
+![addCategory](https://user-images.githubusercontent.com/23657902/107720531-1ccafe80-6d0d-11eb-9eaa-62401a74ebd4.png)
 
-## Blog - Setting
 
-- [ php artisan make:model Setting -m](Membuat model Setting beserta migrationnya).
-- [ php artisan make:seeder SettingsTableSeeder](Membuat Seeder setting).
-- [ php artisan make:controller SettingsController](Membuat Controller setting).
+## Modul User
+- CRUD User
 
-## Blog - Frontend
-- [ php artisan make:controller FrontEndController](Membuat Controller Frontend).
-- [ Membuat tampilan comentar dengan Disqus](https://disqus.com/).
+![user](https://user-images.githubusercontent.com/23657902/107720593-3e2bea80-6d0d-11eb-9173-c3915516842a.png)
+
+![editProfile](https://user-images.githubusercontent.com/23657902/107720610-471cbc00-6d0d-11eb-823a-b2ade9b9d864.png)
+
+
+## Modul Posts
+- CRUD Posts
+
+![post](https://user-images.githubusercontent.com/23657902/107720659-5c91e600-6d0d-11eb-9a5f-85c5e4f149ac.png)
+
+
+## Modul Settings
+- Settings
+
+![setting](https://user-images.githubusercontent.com/23657902/107720696-70d5e300-6d0d-11eb-80d6-ee93d3029927.png)
