@@ -59,3 +59,8 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 ## Setting Users relationship
 - [ php artisan make:migration insert_user_id_column --table="posts"
 ](Menambahkan field user_id pada posts table).
+
+## addthis
+- [ untuk  share soscial media](https://www.addthis.com/dashboard).
+
+
