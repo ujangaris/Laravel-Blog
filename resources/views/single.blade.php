@@ -87,7 +87,7 @@
                 <div class="blog-details-author">
 
                     <div class="blog-details-author-thumb">
-                        <img src="{{ asset('app/img/blog-details-author.png') }}" alt="Author">
+                        <img src="{{ asset($post->user->profile->avatar) }}" alt="Author" width="80px">
                     </div>
 
                     <div class="blog-details-author-content">
@@ -98,19 +98,12 @@
                         </p>
                         <div class="socials">
 
-                            <a href="#" class="social__item">
+                            <a href="{{ $post->user->profile->facebook }}" class="social__item" target="_blank">
                                 <img src="{{ asset('app/svg/circle-facebook.svg') }}" alt="facebook">
                             </a>
 
-                            <a href="#" class="social__item">
-                                <img src="{{ asset('app/svg/twitter.svg') }}" alt="twitter">
-                            </a>
-
-                            <a href="#" class="social__item">
-                                <img src="{{ asset('app/svg/google.svg') }}" alt="google">
-                            </a>
-
-                            <a href="#" class="social__item">
+                            
+                            <a href="{{ $post->user->profile->youtube }}" class="social__item" target="_blank">
                                 <img src="{{ asset('app/svg/youtube.svg') }}" alt="youtube">
                             </a>
 
