@@ -6,6 +6,7 @@ use Session;
 use App\Category;
 use App\Post;
 use App\Tag;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class PostsController extends Controller
@@ -64,7 +65,9 @@ class PostsController extends Controller
                 'title' => $request->title,
                 'content' => $request->content,
                 'featured' => 'uploads/posts/'. $featured_new_name, 
-                'category_id' => $request->category_id,'slug' => str_slug($request->title),
+                'category_id' => $request->category_id,
+                'slug' => str_slug($request->title),
+                'user_id' => Auth::user()->id,
 
             ]);
 
